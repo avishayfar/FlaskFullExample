@@ -1,0 +1,59 @@
+
+api.add_resource(TodoList, '/todos')
+api.add_resource(Todo, '/todos/<todo_id>')
+
+--------------------------------------
+
+
+GET http://localhost:5000/todos  [get all the todo data]
+
+Return value:
+{
+    "todo1": {
+        "task": "build an API"
+    },
+    "todo2": {
+        "task": "!!!!!!"
+    },
+    "todo3": {
+        "task": "profit!"
+    },
+    "todo4": {
+        "task": "s5551!"
+    },
+    "todo5": {
+        "task": "22222!"
+    },
+    "todo6": {
+        "task": "33333!"
+    }
+}
+
+GET http://localhost:5000/todos/todo3  [get specific todo]
+
+Return value:
+{
+    "task": "profit!"
+}
+
+POST http://localhost:5000/todos
+
+{
+    "task": "33333!"
+}
+
+Return value:
+
+true
+
+PUT http://localhost:5000/todos/todo2
+
+{
+    "task": "!!!!!!"
+}
+
+Return value:
+
+{
+    "task": "!!!!!!"
+}

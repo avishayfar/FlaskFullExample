@@ -31,6 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="CRUD_calling_examples.txt" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
