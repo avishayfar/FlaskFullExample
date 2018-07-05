@@ -36,7 +36,7 @@ Return value:
     "task": "profit!"
 }
 
-POST http://localhost:5000/todos
+POST http://localhost:5000/todos	[add  todo to the todos list]
 
 {
     "task": "33333!"
@@ -46,7 +46,7 @@ Return value:
 
 true
 
-PUT http://localhost:5000/todos/todo2
+PUT http://localhost:5000/todos/todo2   [update specific todo]
 
 {
     "task": "!!!!!!"
